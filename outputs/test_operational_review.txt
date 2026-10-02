@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_operational_review.py::test_complete_operational_review_is_valid PASSED [ 16%]
+tests/test_operational_review.py::test_all_required_areas_are_reviewed PASSED [ 33%]
+tests/test_operational_review.py::test_missing_review_area_is_rejected PASSED [ 50%]
+tests/test_operational_review.py::test_risk_register_contains_open_risks PASSED [ 66%]
+tests/test_operational_review.py::test_no_critical_risk_means_release_not_blocked PASSED [ 83%]
+tests/test_operational_review.py::test_critical_risk_blocks_release PASSED [100%]
+
+============================== 6 passed in 0.05s ==============================
