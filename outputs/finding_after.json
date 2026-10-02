@@ -1,0 +1,19 @@
+{
+  "finding": "Executor did not validate tool names before execution.",
+  "severity": "high",
+  "remediation": "Added tool registry validation before execution.",
+  "before": {
+    "behavior": "Unsupported tool raised KeyError.",
+    "status": "unsafe_failure"
+  },
+  "after": {
+    "behavior": {
+      "status": "rejected",
+      "reason": "unsupported_tool",
+      "tool_name": "delete_order"
+    },
+    "status": "safe_rejection"
+  },
+  "fixed": true,
+  "residual_risk": "Tool arguments still depend on each tool's validation rules."
+}
