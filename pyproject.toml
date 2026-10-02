@@ -7,4 +7,5 @@ requires-python = ">=3.12"
 dependencies = [
     "openai>=3.23.0",
     "pytest>=9.1.1",
+    "python-dotenv>=1.2.4",
 ]

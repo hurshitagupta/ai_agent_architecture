@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_review_report.py::test_valid_evidence_is_accepted PASSED      [ 16%]
+tests/test_review_report.py::test_missing_evidence_is_rejected PASSED    [ 33%]
+tests/test_review_report.py::test_empty_architecture_inventory_is_rejected PASSED [ 50%]
+tests/test_review_report.py::test_prompt_contains_project_evidence PASSED [ 66%]
+tests/test_review_report.py::test_review_report_uses_llm_response PASSED [ 83%]
+tests/test_review_report.py::test_empty_llm_response_is_rejected PASSED  [100%]
+
+============================== 6 passed in 1.33s ==============================
