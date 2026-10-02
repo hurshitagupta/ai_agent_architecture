@@ -1,0 +1,14 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 4 items
+
+tests/test_finding_reproduction.py::test_valid_tool_executes_successfully PASSED [ 25%]
+tests/test_finding_reproduction.py::test_unknown_order_is_handled PASSED [ 50%]
+tests/test_finding_reproduction.py::test_unsupported_tool_reproduces_failure PASSED [ 75%]
+tests/test_finding_reproduction.py::test_finding_is_recorded PASSED      [100%]
+
+============================== 4 passed in 0.10s ==============================
