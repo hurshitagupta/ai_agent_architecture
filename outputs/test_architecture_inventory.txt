@@ -1,0 +1,13 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\ai_agent_architecture
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 3 items
+
+tests/test_architecture_inventory.py::test_valid_architecture_inventory PASSED [ 33%]
+tests/test_architecture_inventory.py::test_empty_inventory_is_rejected PASSED [ 66%]
+tests/test_architecture_inventory.py::test_duplicate_component_is_rejected PASSED [100%]
+
+============================== 3 passed in 0.10s ==============================

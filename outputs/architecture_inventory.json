@@ -1,0 +1,52 @@
+[
+  {
+    "name": "brain",
+    "responsibility": "Interprets the user request and decides what should happen next.",
+    "boundary": "Does not directly execute tools or modify external systems."
+  },
+  {
+    "name": "planner",
+    "responsibility": "Breaks the request into ordered execution steps.",
+    "boundary": "Creates plans only; execution is handled by the executor."
+  },
+  {
+    "name": "executor",
+    "responsibility": "Executes approved plan steps and tool calls.",
+    "boundary": "Can only execute registered and validated actions."
+  },
+  {
+    "name": "memory",
+    "responsibility": "Stores and retrieves information required across agent steps.",
+    "boundary": "Only validated information can be written to memory."
+  },
+  {
+    "name": "tools",
+    "responsibility": "Provides controlled capabilities such as order lookup or calculations.",
+    "boundary": "Only registered tools with validated arguments can be executed."
+  },
+  {
+    "name": "state",
+    "responsibility": "Tracks current request, plan, results, errors, and progress.",
+    "boundary": "Contains runtime state only and does not perform actions."
+  },
+  {
+    "name": "control_loop",
+    "responsibility": "Coordinates planning, execution, retries, and stopping conditions.",
+    "boundary": "Must respect configured step and retry limits."
+  },
+  {
+    "name": "communication",
+    "responsibility": "Creates structured messages between components and the final response.",
+    "boundary": "Messages must follow a defined communication contract."
+  },
+  {
+    "name": "persistence",
+    "responsibility": "Stores selected traces, reports, or persistent records.",
+    "boundary": "Secrets and unvalidated sensitive data must not be persisted."
+  },
+  {
+    "name": "deployment",
+    "responsibility": "Defines how the agent is started and configured in its runtime environment.",
+    "boundary": "Configuration and credentials must come from environment variables."
+  }
+]
